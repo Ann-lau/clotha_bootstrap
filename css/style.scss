@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rufina&display=swap');
+
+
+// Create SCSS variables
+$white:#ffffff;
+$black:#000000;
+$primary:#fff6dc;
+$secondary:#9eb384;
+$dark: #435334;
+$light:#aebe93;
+$body_color:#ffffff;
+$sm:576px;
+$md:768px;
+$lg:992px;
+$xl:1200px;
+$xxl:1400px;
+
+$font-family:rufina;
+
+.custom-navbar {
+	background: #fff6dc;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
