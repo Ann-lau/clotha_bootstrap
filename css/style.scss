@@ -17,9 +17,57 @@ $xxl:1400px;
 
 $font-family:rufina;
 
+body {
+	font-family: $font-family;
+	font-weight: 400;
+	line-height: 28px;
+	color: $body_color;
+}
+
 .custom-navbar {
-	background: #fff6dc;
+	background: $primary !important;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	.navbar-brand {
+		font-size: 32px;
+		font-weight: 600;
+	}
+	.navbar-toggler {
+		border-color: transparent;
+		&:active, &:focus {
+			box-shadow: none;
+			outline: none;
+		}
+	}
+	.custom-navbar-nav {
+		li {
+			a {
+				font-weight: 500;
+				color: $dark !important;
+				opacity: .5;
+				transition: .3sa all ease;
+				position: relative;
+				&::before {
+					content:"" ;
+					position: absolute;
+					bottom: 0;
+					left: 8px;
+					right: 8px;
+					background: $secondary;
+					height:5px;
+					
+				}
+				&:hover {
+					opacity: 1;
+				}
+			}
+			&.active {
+				a {
+					opacity: 1;
+
+				}
+			}
+		}
+	}
 }
 
